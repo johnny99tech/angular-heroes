@@ -4,6 +4,9 @@
     Welcome to {{title}}!!
   </h1>
 </div>
+<!-->
+  faz  a mesma função
+
 <div *ngIf="selectedHero">
   <h2>Hero {{selectedHero.name}} details</h2>
   <div><label>id: </label>{{selectedHero.id}}</div>
@@ -12,6 +15,7 @@
     <input [(ngModel)]="selectedHero.name" placeholder="name">
   </div>
 </div>
+<!-->
 <div *ngIf="heroes">
   <h2>Meus heróis</h2>
   <ul class="heroes">
@@ -22,3 +26,5 @@
     </li>
   </ul>
 </div>
+
+<hero-detail [hero]="selectedHero"></hero-detail>
